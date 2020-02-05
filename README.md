@@ -1,4 +1,5 @@
 # Digital-electronics-1
+## Boolean table
 
 |**A**|**NOT**|
 |:-:|:-:|
