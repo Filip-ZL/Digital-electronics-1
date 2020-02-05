@@ -26,6 +26,7 @@
 | 0 | 1 | 1 | 0 |
 | 1 | 0 | 1 | 0 |
 | 1 | 1 | 0 | 1 |
+
 ![equation](1ukol.png)
 ### 2. ukol
 | **A** | **B** |**C** | ![equation](https://latex.codecogs.com/gif.latex?f) | ![equation](https://latex.codecogs.com/gif.latex?f_%7BAND%7D) | ![equation](https://latex.codecogs.com/gif.latex?f_%7BOR%7D) |
@@ -48,6 +49,7 @@
 | 0 | 1 | 0 | 0 | 1 | 0 |
 | 1 | 0 | 0 | 1 | 0 | 0 |
 | 1 | 1 | 1 | 0 | 0 | 0 |
+
 ![equation](3ukol.png)
 ## Created by:
 * Filip Dušek
