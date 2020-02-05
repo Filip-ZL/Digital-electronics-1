@@ -37,6 +37,8 @@
 | 1 | 0 | 1 | 1 | 1 | 1 |
 | 1 | 1 | 0 | 0 | 0 | 0 |
 | 1 | 1 | 1 | 0 | 0 | 0 |
+
+![equation](hradla.png)
 ## Created by:
 * Filip Dušek
 * Filip Jašek
