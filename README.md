@@ -9,3 +9,9 @@
 ## Created by:
 * Filip Dušek
 * Filip Jašek
+
+## Command table
+|**Command**|**Description**|
+|:-:|:-:|
+|'Ctrl+Alt+T'|Open Linux terminal in Ubuntu based distributions|
+|'Tab'|Automatic completion what you are typing or suggest options to you|
