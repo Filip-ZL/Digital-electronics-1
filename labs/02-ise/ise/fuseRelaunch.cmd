@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/lab661/Documents/xjasek15/Digital-electronics-1/labs/02-ise/ise/top_tb00_isim_beh.exe" -prj "/home/lab661/Documents/xjasek15/Digital-electronics-1/labs/02-ise/ise/top_tb00_beh.prj" "work.top_tb00" 
