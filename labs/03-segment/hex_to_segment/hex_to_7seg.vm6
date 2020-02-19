@@ -1,0 +1,468 @@
+NDS Database:  version P.20131013
+
+NDS_INFO | xbr | 2C256144 | XC2C256-6-TQ144
+
+DEVICE | 2C256 | 2C256144 | 
+
+NETWORK | hex_to_7seg | 0 | 0 | 1073758214 | 0
+
+INPUT_INSTANCE | 0 | 0 | NULL | hex_i<0>_II | hex_to_7seg_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | hex_i<0> | 2146 | PI | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | hex_i<0>_II/UIM | 2156 | ? | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | NULL | hex_i<0>_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | hex_i<1>_II | hex_to_7seg_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | hex_i<1> | 2147 | PI | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | hex_i<1>_II/UIM | 2155 | ? | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | NULL | hex_i<1>_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | hex_i<2>_II | hex_to_7seg_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | hex_i<2> | 2148 | PI | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | hex_i<2>_II/UIM | 2154 | ? | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | NULL | hex_i<2>_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | hex_i<3>_II | hex_to_7seg_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | hex_i<3> | 2149 | PI | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | hex_i<3>_II/UIM | 2153 | ? | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | NULL | hex_i<3>_II | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | NULL | seg_o<0>_MC | hex_to_7seg_COPY_0_COPY_0 | 0 | 4 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | hex_i<3>_II/UIM | 2153 | ? | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | NULL | hex_i<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | hex_i<2>_II/UIM | 2154 | ? | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | NULL | hex_i<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | hex_i<1>_II/UIM | 2155 | ? | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | NULL | hex_i<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | hex_i<0>_II/UIM | 2156 | ? | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | NULL | hex_i<0>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | seg_o<0>_MC.Q | 2158 | ? | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | seg_o<0>_MC.Q | seg_o<0>_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | seg_o<0>_MC.SI | seg_o<0>_MC | 0 | 4 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | hex_i<3>_II/UIM | 2153 | ? | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | NULL | hex_i<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | hex_i<2>_II/UIM | 2154 | ? | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | NULL | hex_i<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | hex_i<1>_II/UIM | 2155 | ? | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | NULL | hex_i<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | hex_i<0>_II/UIM | 2156 | ? | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | NULL | hex_i<0>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | seg_o<0>_MC.D1 | 2152 | ? | 0 | 0 | seg_o<0>_MC | NULL | NULL | seg_o<0>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | seg_o<0>_MC.D2 | 2151 | ? | 0 | 0 | seg_o<0>_MC | NULL | NULL | seg_o<0>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_FALSE | hex_i<3>_II/UIM | IV_FALSE | hex_i<2>_II/UIM | IV_FALSE | hex_i<1>_II/UIM
+SPPTERM | 4 | IV_TRUE | hex_i<3>_II/UIM | IV_TRUE | hex_i<2>_II/UIM | IV_FALSE | hex_i<1>_II/UIM | IV_FALSE | hex_i<0>_II/UIM
+SPPTERM | 4 | IV_FALSE | hex_i<3>_II/UIM | IV_TRUE | hex_i<2>_II/UIM | IV_TRUE | hex_i<1>_II/UIM | IV_TRUE | hex_i<0>_II/UIM
+
+SRFF_INSTANCE | seg_o<0>_MC.REG | seg_o<0>_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | seg_o<0>_MC.D | 2150 | ? | 0 | 0 | seg_o<0>_MC | NULL | NULL | seg_o<0>_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | seg_o<0>_MC.Q | 2157 | ? | 0 | 0 | seg_o<0>_MC | NULL | NULL | seg_o<0>_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | seg_o<0> | hex_to_7seg_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | seg_o<0>_MC.Q | 2158 | ? | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | seg_o<0>_MC.Q | seg_o<0>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | seg_o<0> | 2159 | PO | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | NULL | seg_o<0> | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | NULL | seg_o<1>_MC | hex_to_7seg_COPY_0_COPY_0 | 0 | 4 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | hex_i<3>_II/UIM | 2153 | ? | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | NULL | hex_i<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | hex_i<0>_II/UIM | 2156 | ? | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | NULL | hex_i<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | hex_i<2>_II/UIM | 2154 | ? | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | NULL | hex_i<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | hex_i<1>_II/UIM | 2155 | ? | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | NULL | hex_i<1>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | seg_o<1>_MC.Q | 2164 | ? | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | seg_o<1>_MC.Q | seg_o<1>_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | seg_o<1>_MC.SI | seg_o<1>_MC | 0 | 4 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | hex_i<3>_II/UIM | 2153 | ? | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | NULL | hex_i<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | hex_i<0>_II/UIM | 2156 | ? | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | NULL | hex_i<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | hex_i<2>_II/UIM | 2154 | ? | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | NULL | hex_i<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | hex_i<1>_II/UIM | 2155 | ? | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | NULL | hex_i<1>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | seg_o<1>_MC.D1 | 2161 | ? | 0 | 0 | seg_o<1>_MC | NULL | NULL | seg_o<1>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 2 | IV_FALSE | hex_i<3>_II/UIM | IV_TRUE | hex_i<0>_II/UIM
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | seg_o<1>_MC.D2 | 2162 | ? | 0 | 0 | seg_o<1>_MC | NULL | NULL | seg_o<1>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_TRUE | hex_i<2>_II/UIM | IV_FALSE | hex_i<1>_II/UIM | IV_TRUE | hex_i<0>_II/UIM
+SPPTERM | 4 | IV_FALSE | hex_i<3>_II/UIM | IV_FALSE | hex_i<2>_II/UIM | IV_TRUE | hex_i<1>_II/UIM | IV_FALSE | hex_i<0>_II/UIM
+
+SRFF_INSTANCE | seg_o<1>_MC.REG | seg_o<1>_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | seg_o<1>_MC.D | 2160 | ? | 0 | 0 | seg_o<1>_MC | NULL | NULL | seg_o<1>_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | seg_o<1>_MC.Q | 2163 | ? | 0 | 0 | seg_o<1>_MC | NULL | NULL | seg_o<1>_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | seg_o<1> | hex_to_7seg_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | seg_o<1>_MC.Q | 2164 | ? | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | seg_o<1>_MC.Q | seg_o<1>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | seg_o<1> | 2165 | PO | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | NULL | seg_o<1> | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | NULL | seg_o<2>_MC | hex_to_7seg_COPY_0_COPY_0 | 0 | 4 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | hex_i<3>_II/UIM | 2153 | ? | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | NULL | hex_i<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | hex_i<0>_II/UIM | 2156 | ? | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | NULL | hex_i<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | hex_i<2>_II/UIM | 2154 | ? | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | NULL | hex_i<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | hex_i<1>_II/UIM | 2155 | ? | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | NULL | hex_i<1>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | seg_o<2>_MC.Q | 2170 | ? | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | seg_o<2>_MC.Q | seg_o<2>_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | seg_o<2>_MC.SI | seg_o<2>_MC | 0 | 4 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | hex_i<3>_II/UIM | 2153 | ? | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | NULL | hex_i<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | hex_i<0>_II/UIM | 2156 | ? | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | NULL | hex_i<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | hex_i<2>_II/UIM | 2154 | ? | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | NULL | hex_i<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | hex_i<1>_II/UIM | 2155 | ? | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | NULL | hex_i<1>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | seg_o<2>_MC.D1 | 2168 | ? | 0 | 0 | seg_o<2>_MC | NULL | NULL | seg_o<2>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | seg_o<2>_MC.D2 | 2167 | ? | 0 | 0 | seg_o<2>_MC | NULL | NULL | seg_o<2>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_FALSE | hex_i<3>_II/UIM | IV_TRUE | hex_i<0>_II/UIM
+SPPTERM | 3 | IV_FALSE | hex_i<3>_II/UIM | IV_TRUE | hex_i<2>_II/UIM | IV_FALSE | hex_i<1>_II/UIM
+SPPTERM | 3 | IV_FALSE | hex_i<2>_II/UIM | IV_FALSE | hex_i<1>_II/UIM | IV_TRUE | hex_i<0>_II/UIM
+
+SRFF_INSTANCE | seg_o<2>_MC.REG | seg_o<2>_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | seg_o<2>_MC.D | 2166 | ? | 0 | 0 | seg_o<2>_MC | NULL | NULL | seg_o<2>_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | seg_o<2>_MC.Q | 2169 | ? | 0 | 0 | seg_o<2>_MC | NULL | NULL | seg_o<2>_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | seg_o<2> | hex_to_7seg_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | seg_o<2>_MC.Q | 2170 | ? | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | seg_o<2>_MC.Q | seg_o<2>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | seg_o<2> | 2171 | PO | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | NULL | seg_o<2> | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | NULL | seg_o<3>_MC | hex_to_7seg_COPY_0_COPY_0 | 0 | 4 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | hex_i<2>_II/UIM | 2154 | ? | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | NULL | hex_i<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | hex_i<1>_II/UIM | 2155 | ? | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | NULL | hex_i<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | hex_i<0>_II/UIM | 2156 | ? | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | NULL | hex_i<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | hex_i<3>_II/UIM | 2153 | ? | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | NULL | hex_i<3>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | seg_o<3>_MC.Q | 2176 | ? | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | seg_o<3>_MC.Q | seg_o<3>_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | seg_o<3>_MC.SI | seg_o<3>_MC | 0 | 4 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | hex_i<2>_II/UIM | 2154 | ? | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | NULL | hex_i<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | hex_i<1>_II/UIM | 2155 | ? | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | NULL | hex_i<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | hex_i<0>_II/UIM | 2156 | ? | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | NULL | hex_i<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | hex_i<3>_II/UIM | 2153 | ? | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | NULL | hex_i<3>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | seg_o<3>_MC.D1 | 2174 | ? | 0 | 0 | seg_o<3>_MC | NULL | NULL | seg_o<3>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | seg_o<3>_MC.D2 | 2173 | ? | 0 | 0 | seg_o<3>_MC | NULL | NULL | seg_o<3>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_TRUE | hex_i<2>_II/UIM | IV_TRUE | hex_i<1>_II/UIM | IV_TRUE | hex_i<0>_II/UIM
+SPPTERM | 4 | IV_TRUE | hex_i<3>_II/UIM | IV_FALSE | hex_i<2>_II/UIM | IV_TRUE | hex_i<1>_II/UIM | IV_FALSE | hex_i<0>_II/UIM
+SPPTERM | 4 | IV_FALSE | hex_i<3>_II/UIM | IV_TRUE | hex_i<2>_II/UIM | IV_FALSE | hex_i<1>_II/UIM | IV_FALSE | hex_i<0>_II/UIM
+SPPTERM | 4 | IV_FALSE | hex_i<3>_II/UIM | IV_FALSE | hex_i<2>_II/UIM | IV_FALSE | hex_i<1>_II/UIM | IV_TRUE | hex_i<0>_II/UIM
+
+SRFF_INSTANCE | seg_o<3>_MC.REG | seg_o<3>_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | seg_o<3>_MC.D | 2172 | ? | 0 | 0 | seg_o<3>_MC | NULL | NULL | seg_o<3>_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | seg_o<3>_MC.Q | 2175 | ? | 0 | 0 | seg_o<3>_MC | NULL | NULL | seg_o<3>_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | seg_o<3> | hex_to_7seg_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | seg_o<3>_MC.Q | 2176 | ? | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | seg_o<3>_MC.Q | seg_o<3>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | seg_o<3> | 2177 | PO | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | NULL | seg_o<3> | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | NULL | seg_o<4>_MC | hex_to_7seg_COPY_0_COPY_0 | 0 | 4 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | hex_i<3>_II/UIM | 2153 | ? | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | NULL | hex_i<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | hex_i<2>_II/UIM | 2154 | ? | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | NULL | hex_i<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | hex_i<1>_II/UIM | 2155 | ? | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | NULL | hex_i<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | hex_i<0>_II/UIM | 2156 | ? | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | NULL | hex_i<0>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | seg_o<4>_MC.Q | 2182 | ? | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | seg_o<4>_MC.Q | seg_o<4>_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | seg_o<4>_MC.SI | seg_o<4>_MC | 0 | 4 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | hex_i<3>_II/UIM | 2153 | ? | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | NULL | hex_i<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | hex_i<2>_II/UIM | 2154 | ? | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | NULL | hex_i<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | hex_i<1>_II/UIM | 2155 | ? | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | NULL | hex_i<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | hex_i<0>_II/UIM | 2156 | ? | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | NULL | hex_i<0>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | seg_o<4>_MC.D1 | 2180 | ? | 0 | 0 | seg_o<4>_MC | NULL | NULL | seg_o<4>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | seg_o<4>_MC.D2 | 2179 | ? | 0 | 0 | seg_o<4>_MC | NULL | NULL | seg_o<4>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_TRUE | hex_i<3>_II/UIM | IV_TRUE | hex_i<2>_II/UIM | IV_TRUE | hex_i<1>_II/UIM
+SPPTERM | 3 | IV_TRUE | hex_i<3>_II/UIM | IV_TRUE | hex_i<2>_II/UIM | IV_FALSE | hex_i<0>_II/UIM
+SPPTERM | 4 | IV_FALSE | hex_i<3>_II/UIM | IV_FALSE | hex_i<2>_II/UIM | IV_TRUE | hex_i<1>_II/UIM | IV_FALSE | hex_i<0>_II/UIM
+
+SRFF_INSTANCE | seg_o<4>_MC.REG | seg_o<4>_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | seg_o<4>_MC.D | 2178 | ? | 0 | 0 | seg_o<4>_MC | NULL | NULL | seg_o<4>_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | seg_o<4>_MC.Q | 2181 | ? | 0 | 0 | seg_o<4>_MC | NULL | NULL | seg_o<4>_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | seg_o<4> | hex_to_7seg_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | seg_o<4>_MC.Q | 2182 | ? | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | seg_o<4>_MC.Q | seg_o<4>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | seg_o<4> | 2183 | PO | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | NULL | seg_o<4> | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | NULL | seg_o<5>_MC | hex_to_7seg_COPY_0_COPY_0 | 0 | 4 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | hex_i<2>_II/UIM | 2154 | ? | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | NULL | hex_i<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | hex_i<0>_II/UIM | 2156 | ? | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | NULL | hex_i<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | hex_i<3>_II/UIM | 2153 | ? | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | NULL | hex_i<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | hex_i<1>_II/UIM | 2155 | ? | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | NULL | hex_i<1>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | seg_o<5>_MC.Q | 2188 | ? | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | seg_o<5>_MC.Q | seg_o<5>_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | seg_o<5>_MC.SI | seg_o<5>_MC | 0 | 4 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | hex_i<2>_II/UIM | 2154 | ? | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | NULL | hex_i<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | hex_i<0>_II/UIM | 2156 | ? | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | NULL | hex_i<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | hex_i<3>_II/UIM | 2153 | ? | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | NULL | hex_i<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | hex_i<1>_II/UIM | 2155 | ? | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | NULL | hex_i<1>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | seg_o<5>_MC.D1 | 2185 | ? | 0 | 0 | seg_o<5>_MC | NULL | NULL | seg_o<5>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 2 | IV_TRUE | hex_i<2>_II/UIM | IV_FALSE | hex_i<0>_II/UIM
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | seg_o<5>_MC.D2 | 2186 | ? | 0 | 0 | seg_o<5>_MC | NULL | NULL | seg_o<5>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_TRUE | hex_i<3>_II/UIM | IV_TRUE | hex_i<1>_II/UIM | IV_TRUE | hex_i<0>_II/UIM
+SPPTERM | 3 | IV_FALSE | hex_i<3>_II/UIM | IV_TRUE | hex_i<2>_II/UIM | IV_FALSE | hex_i<1>_II/UIM
+
+SRFF_INSTANCE | seg_o<5>_MC.REG | seg_o<5>_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | seg_o<5>_MC.D | 2184 | ? | 0 | 0 | seg_o<5>_MC | NULL | NULL | seg_o<5>_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | seg_o<5>_MC.Q | 2187 | ? | 0 | 0 | seg_o<5>_MC | NULL | NULL | seg_o<5>_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | seg_o<5> | hex_to_7seg_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | seg_o<5>_MC.Q | 2188 | ? | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | seg_o<5>_MC.Q | seg_o<5>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | seg_o<5> | 2189 | PO | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | NULL | seg_o<5> | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | NULL | seg_o<6>_MC | hex_to_7seg_COPY_0_COPY_0 | 0 | 4 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | hex_i<1>_II/UIM | 2155 | ? | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | NULL | hex_i<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | hex_i<0>_II/UIM | 2156 | ? | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | NULL | hex_i<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | hex_i<3>_II/UIM | 2153 | ? | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | NULL | hex_i<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | hex_i<2>_II/UIM | 2154 | ? | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | NULL | hex_i<2>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | seg_o<6>_MC.Q | 2194 | ? | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | seg_o<6>_MC.Q | seg_o<6>_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | seg_o<6>_MC.SI | seg_o<6>_MC | 0 | 4 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | hex_i<1>_II/UIM | 2155 | ? | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | NULL | hex_i<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | hex_i<0>_II/UIM | 2156 | ? | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | NULL | hex_i<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | hex_i<3>_II/UIM | 2153 | ? | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | NULL | hex_i<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | hex_i<2>_II/UIM | 2154 | ? | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | NULL | hex_i<2>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | seg_o<6>_MC.D1 | 2191 | ? | 0 | 0 | seg_o<6>_MC | NULL | NULL | seg_o<6>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 2 | IV_FALSE | hex_i<1>_II/UIM | IV_TRUE | hex_i<0>_II/UIM
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | seg_o<6>_MC.D2 | 2192 | ? | 0 | 0 | seg_o<6>_MC | NULL | NULL | seg_o<6>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_TRUE | hex_i<3>_II/UIM | IV_FALSE | hex_i<2>_II/UIM | IV_TRUE | hex_i<0>_II/UIM
+SPPTERM | 3 | IV_FALSE | hex_i<3>_II/UIM | IV_TRUE | hex_i<2>_II/UIM | IV_FALSE | hex_i<1>_II/UIM
+
+SRFF_INSTANCE | seg_o<6>_MC.REG | seg_o<6>_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | seg_o<6>_MC.D | 2190 | ? | 0 | 0 | seg_o<6>_MC | NULL | NULL | seg_o<6>_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | seg_o<6>_MC.Q | 2193 | ? | 0 | 0 | seg_o<6>_MC | NULL | NULL | seg_o<6>_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | seg_o<6> | hex_to_7seg_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | seg_o<6>_MC.Q | 2194 | ? | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | seg_o<6>_MC.Q | seg_o<6>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | seg_o<6> | 2195 | PO | 0 | 0 | hex_to_7seg_COPY_0_COPY_0 | NULL | NULL | seg_o<6> | 0 | 6 | OI_OUT
+
+FB_INSTANCE | FOOBAR1_ | hex_to_7seg_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 3 | seg_o<1>_MC | 1 | NULL | 0 | seg_o<1> | 1 | 143 | 51200
+FBPIN | 4 | seg_o<2>_MC | 1 | NULL | 0 | seg_o<2> | 1 | 142 | 49152
+FBPIN | 6 | seg_o<5>_MC | 1 | NULL | 0 | seg_o<5> | 1 | 140 | 49152
+FBPIN | 12 | seg_o<6>_MC | 1 | NULL | 0 | seg_o<6> | 1 | 139 | 49152
+FBPIN | 13 | seg_o<4>_MC | 1 | NULL | 0 | seg_o<4> | 1 | 138 | 49152
+FBPIN | 14 | seg_o<0>_MC | 1 | NULL | 0 | seg_o<0> | 1 | 137 | 49152
+
+FB_INSTANCE | FOOBAR2_ | hex_to_7seg_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 1 | seg_o<3>_MC | 1 | NULL | 0 | seg_o<3> | 1 | 2 | 53248
+FBPIN | 3 | NULL | 0 | hex_i<0>_II | 1 | NULL | 0 | 3 | 53248
+FBPIN | 4 | NULL | 0 | hex_i<1>_II | 1 | NULL | 0 | 4 | 49152
+FBPIN | 5 | NULL | 0 | hex_i<2>_II | 1 | NULL | 0 | 5 | 53248
+FBPIN | 12 | NULL | 0 | hex_i<3>_II | 1 | NULL | 0 | 6 | 53248
+
+FB_INSTANCE | FOOBAR3_ | hex_to_7seg_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR4_ | hex_to_7seg_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR5_ | hex_to_7seg_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR6_ | hex_to_7seg_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR7_ | hex_to_7seg_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR8_ | hex_to_7seg_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR9_ | hex_to_7seg_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR10_ | hex_to_7seg_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR11_ | hex_to_7seg_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR12_ | hex_to_7seg_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR13_ | hex_to_7seg_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR14_ | hex_to_7seg_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR15_ | hex_to_7seg_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR16_ | hex_to_7seg_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | INPUTPINS_FOOBAR17_ | hex_to_7seg_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR1_ | FOOBAR1__ctinst | hex_to_7seg_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR2_ | FOOBAR2__ctinst | hex_to_7seg_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR3_ | FOOBAR3__ctinst | hex_to_7seg_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR4_ | FOOBAR4__ctinst | hex_to_7seg_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR5_ | FOOBAR5__ctinst | hex_to_7seg_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR6_ | FOOBAR6__ctinst | hex_to_7seg_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR7_ | FOOBAR7__ctinst | hex_to_7seg_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR8_ | FOOBAR8__ctinst | hex_to_7seg_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR9_ | FOOBAR9__ctinst | hex_to_7seg_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR10_ | FOOBAR10__ctinst | hex_to_7seg_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR11_ | FOOBAR11__ctinst | hex_to_7seg_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR12_ | FOOBAR12__ctinst | hex_to_7seg_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR13_ | FOOBAR13__ctinst | hex_to_7seg_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR14_ | FOOBAR14__ctinst | hex_to_7seg_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR15_ | FOOBAR15__ctinst | hex_to_7seg_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR16_ | FOOBAR16__ctinst | hex_to_7seg_COPY_0_COPY_0 | 0 | 0 | 0
+
+PLA | FOOBAR1_ | 14
+PLA_TERM | 0 | 
+SPPTERM | 3 | IV_FALSE | hex_i<3>_II/UIM | IV_FALSE | hex_i<2>_II/UIM | IV_FALSE | hex_i<1>_II/UIM
+PLA_TERM | 1 | 
+SPPTERM | 4 | IV_FALSE | hex_i<3>_II/UIM | IV_TRUE | hex_i<2>_II/UIM | IV_TRUE | hex_i<1>_II/UIM | IV_TRUE | hex_i<0>_II/UIM
+PLA_TERM | 2 | 
+SPPTERM | 4 | IV_TRUE | hex_i<3>_II/UIM | IV_TRUE | hex_i<2>_II/UIM | IV_FALSE | hex_i<1>_II/UIM | IV_FALSE | hex_i<0>_II/UIM
+PLA_TERM | 3 | 
+SPPTERM | 3 | IV_TRUE | hex_i<2>_II/UIM | IV_FALSE | hex_i<1>_II/UIM | IV_TRUE | hex_i<0>_II/UIM
+PLA_TERM | 4 | 
+SPPTERM | 4 | IV_FALSE | hex_i<3>_II/UIM | IV_FALSE | hex_i<2>_II/UIM | IV_TRUE | hex_i<1>_II/UIM | IV_FALSE | hex_i<0>_II/UIM
+PLA_TERM | 5 | 
+SPPTERM | 3 | IV_FALSE | hex_i<3>_II/UIM | IV_TRUE | hex_i<2>_II/UIM | IV_FALSE | hex_i<1>_II/UIM
+PLA_TERM | 6 | 
+SPPTERM | 3 | IV_FALSE | hex_i<2>_II/UIM | IV_FALSE | hex_i<1>_II/UIM | IV_TRUE | hex_i<0>_II/UIM
+PLA_TERM | 7 | 
+SPPTERM | 3 | IV_TRUE | hex_i<3>_II/UIM | IV_TRUE | hex_i<2>_II/UIM | IV_TRUE | hex_i<1>_II/UIM
+PLA_TERM | 8 | 
+SPPTERM | 3 | IV_TRUE | hex_i<3>_II/UIM | IV_TRUE | hex_i<2>_II/UIM | IV_FALSE | hex_i<0>_II/UIM
+PLA_TERM | 9 | 
+SPPTERM | 3 | IV_TRUE | hex_i<3>_II/UIM | IV_TRUE | hex_i<1>_II/UIM | IV_TRUE | hex_i<0>_II/UIM
+PLA_TERM | 10 | 
+SPPTERM | 3 | IV_TRUE | hex_i<3>_II/UIM | IV_FALSE | hex_i<2>_II/UIM | IV_TRUE | hex_i<0>_II/UIM
+PLA_TERM | 16 | 
+SPPTERM | 2 | IV_FALSE | hex_i<3>_II/UIM | IV_TRUE | hex_i<0>_II/UIM
+PLA_TERM | 25 | 
+SPPTERM | 2 | IV_TRUE | hex_i<2>_II/UIM | IV_FALSE | hex_i<0>_II/UIM
+PLA_TERM | 43 | 
+SPPTERM | 2 | IV_FALSE | hex_i<1>_II/UIM | IV_TRUE | hex_i<0>_II/UIM
+
+PLA | FOOBAR2_ | 4
+PLA_TERM | 0 | 
+SPPTERM | 3 | IV_TRUE | hex_i<2>_II/UIM | IV_TRUE | hex_i<1>_II/UIM | IV_TRUE | hex_i<0>_II/UIM
+PLA_TERM | 1 | 
+SPPTERM | 4 | IV_FALSE | hex_i<3>_II/UIM | IV_FALSE | hex_i<2>_II/UIM | IV_FALSE | hex_i<1>_II/UIM | IV_TRUE | hex_i<0>_II/UIM
+PLA_TERM | 2 | 
+SPPTERM | 4 | IV_TRUE | hex_i<3>_II/UIM | IV_FALSE | hex_i<2>_II/UIM | IV_TRUE | hex_i<1>_II/UIM | IV_FALSE | hex_i<0>_II/UIM
+PLA_TERM | 3 | 
+SPPTERM | 4 | IV_FALSE | hex_i<3>_II/UIM | IV_TRUE | hex_i<2>_II/UIM | IV_FALSE | hex_i<1>_II/UIM | IV_FALSE | hex_i<0>_II/UIM
+
+BUSINFO | HEX_I<3:0> | 4 | 0 | 0 | hex_i<0> | 3 | hex_i<1> | 2 | hex_i<2> | 1 | hex_i<3> | 0
+BUSINFO | SEG_O<6:0> | 7 | 0 | 1 | seg_o<0> | 6 | seg_o<1> | 5 | seg_o<2> | 4 | seg_o<3> | 3 | seg_o<4> | 2 | seg_o<5> | 1 | seg_o<6> | 0
+
+IOSTD | LVCMOS18
+hex_i<0> | LVCMOS18
+hex_i<1> | LVCMOS18
+hex_i<2> | LVCMOS18
+hex_i<3> | LVCMOS18
+seg_o<0> | LVCMOS18
+seg_o<1> | LVCMOS18
+seg_o<2> | LVCMOS18
+seg_o<3> | LVCMOS18
+seg_o<4> | LVCMOS18
+seg_o<5> | LVCMOS18
+seg_o<6> | LVCMOS18
+
+
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 1 | hex_i<0> | 3 | 7 | hex_i<3> | 6 | 8 | hex_i<2> | 5 | 9 | hex_i<1> | 4
+
+FB_IMUX_INDEX | FOOBAR1_ | -1 | 13 | -1 | -1 | -1 | -1 | -1 | 17 | 15 | 14 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1
+
+
+FB_ORDER_OF_INPUTS | FOOBAR2_ | 1 | hex_i<0> | 3 | 7 | hex_i<3> | 6 | 8 | hex_i<2> | 5 | 9 | hex_i<1> | 4
+
+FB_IMUX_INDEX | FOOBAR2_ | -1 | 13 | -1 | -1 | -1 | -1 | -1 | 17 | 15 | 14 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1
+
+

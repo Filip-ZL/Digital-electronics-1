@@ -1,0 +1,141 @@
+MDF Database:  version 1.0
+MDF_INFO | top | XC2C256-6-TQ144
+MACROCELL | 13 | 3 | LD0_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 4 | SW1  | SW0  | BTN1  | BTN0
+INPUTP | 4 | 190 | 62 | 142 | 218
+EQ | 4 | 
+   !LD0 = SW1 & !SW0 & BTN1 & BTN0
+	# !SW1 & SW0 & BTN1 & BTN0
+	# !SW1 & !SW0 & BTN1 & !BTN0
+	# !SW1 & !SW0 & !BTN1 & BTN0;	// (4 pt, 4 inp)
+
+MACROCELL | 13 | 5 | LD1_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 1 | BTN0
+INPUTP | 1 | 218
+EQ | 1 | 
+   LD1 = BTN0;	// (1 pt, 1 inp)
+
+MACROCELL | 13 | 12 | LD2_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 3 | SW1  | SW0  | BTN1
+INPUTP | 3 | 190 | 62 | 142
+EQ | 2 | 
+   LD2 = !SW1
+	# !SW0 & BTN1;	// (2 pt, 3 inp)
+
+MACROCELL | 13 | 13 | LD3_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 4 | SW1  | SW0  | BTN1  | BTN0
+INPUTP | 4 | 190 | 62 | 142 | 218
+EQ | 1 | 
+   !LD3 = !SW1 & !SW0 & BTN1 & BTN0;	// (1 pt, 4 inp)
+
+MACROCELL | 10 | 12 | disp_dig_o<0>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 0
+EQ | 1 | 
+   disp_dig_o<0> = Gnd;	// (0 pt, 0 inp)
+
+MACROCELL | 10 | 13 | disp_dig_o<1>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 0
+EQ | 1 | 
+   !disp_dig_o<1> = Gnd;	// (0 pt, 0 inp)
+
+MACROCELL | 10 | 14 | disp_dig_o<2>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 0
+EQ | 1 | 
+   !disp_dig_o<2> = Gnd;	// (0 pt, 0 inp)
+
+MACROCELL | 10 | 15 | disp_dig_o<3>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 0
+EQ | 1 | 
+   !disp_dig_o<3> = Gnd;	// (0 pt, 0 inp)
+
+MACROCELL | 13 | 15 | disp_seg_o<0>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 4 | SW1  | SW0  | BTN1  | BTN0
+INPUTP | 4 | 190 | 62 | 142 | 218
+EQ | 3 | 
+   disp_seg_o<0> = !SW1 & !SW0 & BTN1
+	# SW1 & SW0 & BTN1 & BTN0
+	# !SW1 & SW0 & !BTN1 & !BTN0;	// (3 pt, 4 inp)
+
+MACROCELL | 15 | 14 | disp_seg_o<1>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 4 | SW1  | BTN0  | SW0  | BTN1
+INPUTP | 4 | 190 | 218 | 62 | 142
+EQ | 3 | 
+   disp_seg_o<1> = !SW1 & !BTN0
+	$ SW0 & BTN1 & !BTN0
+	# !SW1 & !SW0 & !BTN1 & BTN0;	// (3 pt, 4 inp)
+
+MACROCELL | 15 | 11 | disp_seg_o<2>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 4 | SW1  | BTN0  | SW0  | BTN1
+INPUTP | 4 | 190 | 218 | 62 | 142
+EQ | 3 | 
+   disp_seg_o<2> = !SW1 & !BTN0
+	# !SW1 & SW0 & BTN1
+	# !SW0 & BTN1 & !BTN0;	// (3 pt, 4 inp)
+
+MACROCELL | 15 | 10 | disp_seg_o<3>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 4 | SW0  | BTN1  | BTN0  | SW1
+INPUTP | 4 | 62 | 142 | 218 | 190
+EQ | 4 | 
+   disp_seg_o<3> = SW0 & !BTN1 & !BTN0
+	# SW1 & !SW0 & !BTN1 & BTN0
+	# !SW1 & SW0 & BTN1 & BTN0
+	# !SW1 & !SW0 & BTN1 & !BTN0;	// (4 pt, 4 inp)
+
+MACROCELL | 15 | 4 | disp_seg_o<4>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 4 | SW1  | SW0  | BTN1  | BTN0
+INPUTP | 4 | 190 | 62 | 142 | 218
+EQ | 3 | 
+   disp_seg_o<4> = SW1 & SW0 & !BTN1
+	# SW1 & SW0 & BTN0
+	# !SW1 & !SW0 & !BTN1 & BTN0;	// (3 pt, 4 inp)
+
+MACROCELL | 15 | 15 | disp_seg_o<5>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 4 | SW0  | BTN0  | SW1  | BTN1
+INPUTP | 4 | 62 | 218 | 190 | 142
+EQ | 3 | 
+   disp_seg_o<5> = SW0 & BTN0
+	$ SW1 & !BTN1 & !BTN0
+	# !SW1 & SW0 & BTN1;	// (3 pt, 4 inp)
+
+MACROCELL | 15 | 12 | disp_seg_o<6>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 4 | BTN1  | BTN0  | SW1  | SW0
+INPUTP | 4 | 142 | 218 | 190 | 62
+EQ | 3 | 
+   disp_seg_o<6> = BTN1 & !BTN0
+	$ SW1 & !SW0 & !BTN0
+	# !SW1 & SW0 & BTN1;	// (3 pt, 4 inp)
+
+PIN | BTN0 | 64 | 16 | LVCMOS18 | 218 | 10 | 13 | 3 | 13 | 5 | 13 | 13 | 13 | 15 | 15 | 14 | 15 | 11 | 15 | 10 | 15 | 4 | 15 | 15 | 15 | 12
+PIN | BTN1 | 64 | 16 | LVCMOS18 | 142 | 10 | 13 | 3 | 13 | 12 | 13 | 13 | 13 | 15 | 15 | 14 | 15 | 11 | 15 | 10 | 15 | 4 | 15 | 15 | 15 | 12
+PIN | SW1 | 64 | 16 | LVCMOS18 | 190 | 10 | 13 | 3 | 13 | 12 | 13 | 13 | 13 | 15 | 15 | 14 | 15 | 11 | 15 | 10 | 15 | 4 | 15 | 15 | 15 | 12
+PIN | SW0 | 64 | 16 | LVCMOS18 | 62 | 10 | 13 | 3 | 13 | 12 | 13 | 13 | 13 | 15 | 15 | 14 | 15 | 11 | 15 | 10 | 15 | 4 | 15 | 15 | 15 | 12
+PIN | LD0 | 536871040 | 0 | LVCMOS18 | 107
+PIN | LD1 | 536871040 | 0 | LVCMOS18 | 105
+PIN | LD2 | 536871040 | 0 | LVCMOS18 | 102
+PIN | LD3 | 536871040 | 0 | LVCMOS18 | 100
+PIN | disp_dig_o<0> | 536871040 | 0 | LVCMOS18 | 192
+PIN | disp_dig_o<1> | 536871040 | 0 | LVCMOS18 | 194
+PIN | disp_dig_o<2> | 536871040 | 0 | LVCMOS18 | 195
+PIN | disp_dig_o<3> | 536871040 | 0 | LVCMOS18 | 196
+PIN | disp_seg_o<0> | 536871040 | 0 | LVCMOS18 | 95
+PIN | disp_seg_o<1> | 536871040 | 0 | LVCMOS18 | 82
+PIN | disp_seg_o<2> | 536871040 | 0 | LVCMOS18 | 87
+PIN | disp_seg_o<3> | 536871040 | 0 | LVCMOS18 | 88
+PIN | disp_seg_o<4> | 536871040 | 0 | LVCMOS18 | 90
+PIN | disp_seg_o<5> | 536871040 | 0 | LVCMOS18 | 81
+PIN | disp_seg_o<6> | 536871040 | 0 | LVCMOS18 | 86

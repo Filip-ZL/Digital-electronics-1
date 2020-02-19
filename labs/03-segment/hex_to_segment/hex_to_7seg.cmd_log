@@ -1,0 +1,15 @@
+xst -intstyle ise -ifn "/home/lab661/Documents/xjasek15/Digital-electronics-1/labs/03-segment/hex_to_segment/hex_to_7seg.xst" -ofn "/home/lab661/Documents/xjasek15/Digital-electronics-1/labs/03-segment/hex_to_segment/hex_to_7seg.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc2c256-TQ144-6 hex_to_7seg.ngc hex_to_7seg.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 hex_to_7seg.ngd 
+XSLTProcess hex_to_7seg_build.xml 
+tsim -intstyle ise hex_to_7seg hex_to_7seg.nga 
+taengine -intstyle ise -f hex_to_7seg -w --format html1 -l hex_to_7seg_html/tim/timing_report.htm 
+hprep6 -s IEEE1149 -i hex_to_7seg 
+XSLTProcess hex_to_7seg_build.xml 
+XSLTProcess hex_to_7seg_build.xml 
+XSLTProcess hex_to_7seg_build.xml 
+XSLTProcess hex_to_7seg_build.xml 
+XSLTProcess hex_to_7seg_build.xml 
+XSLTProcess hex_to_7seg_build.xml 
+XSLTProcess hex_to_7seg_build.xml 
+XSLTProcess hex_to_7seg_build.xml 

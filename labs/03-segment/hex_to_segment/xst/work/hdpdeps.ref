@@ -1,0 +1,15 @@
+V3 7
+FL /home/lab661/Documents/xjasek15/Digital-electronics-1/labs/03-segment/hex_to_segment/hex_to_7seg.vhd 2020/02/19.11:12:33 P.20131013
+EN work/hex_to_7seg 1582112281 \
+      FL /home/lab661/Documents/xjasek15/Digital-electronics-1/labs/03-segment/hex_to_segment/hex_to_7seg.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/hex_to_7seg/Behavioral 1582112282 \
+      FL /home/lab661/Documents/xjasek15/Digital-electronics-1/labs/03-segment/hex_to_segment/hex_to_7seg.vhd \
+      EN work/hex_to_7seg 1582112281
+FL /home/lab661/Documents/xjasek15/Digital-electronics-1/labs/03-segment/hex_to_segment/top.vhd 2020/02/19.12:37:53 P.20131013
+EN work/top 1582112283 \
+      FL /home/lab661/Documents/xjasek15/Digital-electronics-1/labs/03-segment/hex_to_segment/top.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/top/Behavioral 1582112284 \
+      FL /home/lab661/Documents/xjasek15/Digital-electronics-1/labs/03-segment/hex_to_segment/top.vhd \
+      EN work/top 1582112283 CP work/hex_to_7seg
