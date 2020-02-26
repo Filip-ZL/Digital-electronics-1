@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/lab661/Documents/xjasek15/Digital-electronics-1/labs/04-adder/half_adder/top_isim_beh.exe" -prj "/home/lab661/Documents/xjasek15/Digital-electronics-1/labs/04-adder/half_adder/top_beh.prj" "work.top" 

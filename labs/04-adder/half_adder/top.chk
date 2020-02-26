@@ -1,0 +1,107 @@
+
+----------------------------------------
+|  P a r t i t i o n    S u c c e e d  |
+----------------------------------------
+0 Group(s)
+
+----------------- B l o c k 0 ------------------
+PLApt(19/56), Fanin(11/38), Clk(0/3), Bct(0/4), Pin(0/6), Mcell(7/16)
+PLApts[19/38] 13 15 17 23 5 6 21 22 20 24 14 16 1 2 3 4 7 8 () () () () () () () () () () () () () () () () 
+              () () () 9
+Fanins[11] FULLADDER2/s_carry1.n N_PZ_30.n N_PZ_31.n SW0_CPLD.p SW10_CPLD.p SW11_CPLD.p SW1_CPLD.p SW2_CPLD.p 
+           SW3_CPLD.p SW8_CPLD.p SW9_CPLD.p
+clk[0] 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[ 7] [s_result<2>(160)] [FULLADDER2/s_carry1(159)] [N_PZ_33(155)] [s_result<3>(154)] [N_PZ_13(153)]  
+           [N_PZ_30(152)] [N_PZ_31(151)] 
+Signal[ 7] [ 0:  ][ 1:  ][ 2: (143)  ][ 3: (142)  ][ 4:  ][ 5: (140)  ][ 6: N_PZ_31(151)  ][ 7: N_PZ_30(152)  
+            ][ 8: N_PZ_13(153)  ][ 9: s_result<3>(154)  ][ 10: N_PZ_33(155)  ][ 11: (139)  ][ 12: (138)  ] 
+           [ 13: (137)  ][ 14: FULLADDER2/s_carry1(159)  ][ 15: s_result<2>(160)  ]
+----------------- B l o c k 1 ------------------
+PLApt(0/56), Fanin(0/38), Clk(0/3), Bct(0/4), Pin(4/8), Mcell(0/16)
+PLApts[0/0]
+Fanins[ 0]
+clk[0] 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[ 4] [SW10_CPLD(5)] [SW11_CPLD(4)] [SW8_CPLD(3)] [SW9_CPLD(2)] 
+Signal[ 4] [ 0: SW9_CPLD(2)  ][ 1:  ][ 2: SW8_CPLD(3)  ][ 3: SW11_CPLD(4)  ][ 4: SW10_CPLD(5)  ][ 5:  ][ 6:  
+            ][ 7:  ][ 8:  ][ 9:  ][ 10:  ][ 11: (6)  ][ 12: (7)  ][ 13: (9)  ][ 14: (10)  ][ 15:  ]
+----------------- B l o c k 2 ------------------
+PLApt(0/56), Fanin(0/38), Clk(0/3), Bct(0/4), Pin(4/6), Mcell(0/16)
+PLApts[0/0]
+Fanins[ 0]
+clk[0] 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[ 4] [SW0_CPLD(134)] [SW1_CPLD(133)] [SW2_CPLD(136)] [SW3_CPLD(135)] 
+Signal[ 4] [ 0: SW2_CPLD(136)  ][ 1: SW3_CPLD(135)  ][ 2: SW0_CPLD(134)  ][ 3:  ][ 4: SW1_CPLD(133)  ][ 5:  ] 
+           [ 6:  ][ 7:  ][ 8:  ][ 9:  ][ 10:  ][ 11:  ][ 12:  ][ 13: (132)  ][ 14:  ][ 15: (131)  ]
+----------------- B l o c k 3 ------------------
+----------------- B l o c k 4 ------------------
+----------------- B l o c k 5 ------------------
+----------------- B l o c k 6 ------------------
+----------------- B l o c k 7 ------------------
+----------------- B l o c k 8 ------------------
+----------------- B l o c k 9 ------------------
+----------------- B l o c k 10 ------------------
+PLApt(0/56), Fanin(0/38), Clk(0/3), Bct(0/4), Pin(4/8), Mcell(4/16)
+PLApts[0/0]
+Fanins[ 0]
+clk[0] 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[ 4] [disp_dig_o<1>(318),disp_dig_o<1>(128)] [disp_dig_o<2>(319),disp_dig_o<2>(129)]  
+           [disp_dig_o<3>(320),disp_dig_o<3>(130)] [disp_dig_o<0>(317),disp_dig_o<0>(126)] 
+Signal[ 4] [ 0:  ][ 1:  ][ 2:  ][ 3:  ][ 4: (120)  ][ 5: (121)  ][ 6:  ][ 7:  ][ 8:  ][ 9:  ][ 10: (124)  ] 
+           [ 11: (125)  ][ 12: disp_dig_o<0>(317) disp_dig_o<0>(126)  ][ 13: disp_dig_o<1>(318)  
+           disp_dig_o<1>(128)  ][ 14: disp_dig_o<2>(319) disp_dig_o<2>(129)  ][ 15: disp_dig_o<3>(320)  
+           disp_dig_o<3>(130)  ]
+----------------- B l o c k 11 ------------------
+----------------- B l o c k 12 ------------------
+----------------- B l o c k 13 ------------------
+PLApt(6/56), Fanin(8/38), Clk(0/3), Bct(0/4), Pin(2/8), Mcell(2/16)
+PLApts[6/6] 30 44 47 49 8 11
+Fanins[ 8] N_PZ_13.n N_PZ_30.n N_PZ_31.n N_PZ_33.n s_result<2>.n s_result<3>.n SW11_CPLD.p SW3_CPLD.p
+clk[0] 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[ 2] [disp_seg_o<0>(368),disp_seg_o<0>(61)] [LD2(365),LD2(66)] 
+Signal[ 2] [ 0: (74)  ][ 1: (71)  ][ 2: (70)  ][ 3: (69)  ][ 4:  ][ 5: (68)  ][ 6:  ][ 7:  ][ 8:  ][ 9:  ] 
+           [ 10:  ][ 11:  ][ 12: LD2(365) LD2(66)  ][ 13: (64)  ][ 14:  ][ 15: disp_seg_o<0>(368)  
+           disp_seg_o<0>(61)  ]
+----------------- B l o c k 14 ------------------
+----------------- B l o c k 15 ------------------
+PLApt(19/56), Fanin(6/38), Clk(0/3), Bct(0/4), Pin(6/7), Mcell(6/16)
+PLApts[19/53] 31 38 39 29 36 41 48 27 33 37 40 32 35 43 45 46 25 42 () () () () () () () () () () () () () () 
+              () () () () () () () () () () () () () () () () () () () () 26
+Fanins[ 6] N_PZ_13.n N_PZ_30.n N_PZ_33.n s_result<2>.n s_result<3>.n SW0_CPLD.p
+clk[0] 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[ 6] [disp_seg_o<1>(399),disp_seg_o<1>(54)] [disp_seg_o<3>(395),disp_seg_o<3>(58)]  
+           [disp_seg_o<5>(400),disp_seg_o<5>(53)] [disp_seg_o<6>(397),disp_seg_o<6>(56)]  
+           [disp_seg_o<2>(396),disp_seg_o<2>(57)] [disp_seg_o<4>(389),disp_seg_o<4>(60)] 
+Signal[ 6] [ 0:  ][ 1:  ][ 2:  ][ 3:  ][ 4: disp_seg_o<4>(389) disp_seg_o<4>(60)  ][ 5: (59)  ][ 6:  ][ 7:  ] 
+           [ 8:  ][ 9:  ][ 10: disp_seg_o<3>(395) disp_seg_o<3>(58)  ][ 11: disp_seg_o<2>(396)  
+           disp_seg_o<2>(57)  ][ 12: disp_seg_o<6>(397) disp_seg_o<6>(56)  ][ 13:  ][ 14: disp_seg_o<1>(399)  
+           disp_seg_o<1>(54)  ][ 15: disp_seg_o<5>(400) disp_seg_o<5>(53)  ]
