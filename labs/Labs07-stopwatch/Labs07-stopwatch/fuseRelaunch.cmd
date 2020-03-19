@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "D:/VHDL/Projekt/Labs07-stopwatch/Labs07-stopwatch/simulace_isim_beh.exe" -prj "D:/VHDL/Projekt/Labs07-stopwatch/Labs07-stopwatch/simulace_beh.prj" "simulace" 
