@@ -11,7 +11,7 @@ Po uplynutí zadané doby se výstup ze 100% PWM plynule ztlumí na nulu.
 
 ### 2.2.	Funkční bloky programu
 ![Block diagram](https://github.com/Filip-ZL/Digital-electronics-1/blob/master/labs/project/Untitled%20Diagram.png)
-obrázek 1. Blokové schéma 
+Obrázek 1) Blokové schéma 
 #### 2.2.1.	Popis diagramu
 -	vytvořili jsme programovou simulaci reálného enkodéru se třemi vstupy 
 -	uživatel otáčí ve směru, protisměru hodinových ručiček nebo stiskne tlačítko, popř. nedělá nic (není v diagramu uvedeno)
@@ -22,3 +22,19 @@ obrázek 1. Blokové schéma
 -	výstupem „stopwatch“ (výsledek simulace obr. č. 4 – čítání uživatelem č.5-simulace stopek) jsou již hodnoty, které jsou poslány na řadič a ten jim podle časové jednotky (minuty, desítky minut, atd) přiřadí místo na sedmisegmentovém displeji
 -	dalším výstup nastaví hodnotu pro PWM generátor, který se spustí společně s odpočtem a postupně mění střídu až na 0%
 -	Do PWM generátoru jsou z bloku „stopwatch“ poslány 2 vstupy. První z nich poskytuje maximální čítací hodnotu, druhý se v čase mění a tím je zajištěna změna střídy
+
+## 2.3.	Výsledky simulací
+![encoder](https://github.com/Filip-ZL/Digital-electronics-1/blob/master/labs/project/encoder.PNG)
+Obrázek 2) Výstupy na enkodéru
+
+![enc_analyser](https://github.com/Filip-ZL/Digital-electronics-1/blob/master/labs/project/analyzer.PNG)
+Obrázek 3) Výsledek simulace - analyzátor signálů z enkodéru
+
+![counter](https://github.com/Filip-ZL/Digital-electronics-1/blob/master/labs/project/counter.PNG)
+Obrázek 4) Výsledek simulace - čítání
+
+![stopwatch](https://github.com/Filip-ZL/Digital-electronics-1/blob/master/labs/project/set_timer.PNG)
+Obrázek 5) Výsledek simulace - aktivní stopky
+
+![clock_enable](https://github.com/Filip-ZL/Digital-electronics-1/blob/master/labs/project/Clock_enabled.PNG)
+Obrázek 6) Výsledek simulace - dělička frekvence
