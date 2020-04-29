@@ -10,3 +10,4 @@ Po uplynutí zadané doby se výstup ze 100% PWM plynule ztlumí na nulu.
 * součástí programu je také resetovací tlačítko, které nám zařízení vrátí do výchozího stavu (nulování)
 
 ### 2.2.	Funkční bloky programu
+![equation](hhttps://github.com/Filip-ZL/Digital-electronics-1/blob/master/labs/project/Untitled%20Diagram.png)
