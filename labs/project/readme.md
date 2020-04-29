@@ -38,3 +38,7 @@ Obrázek 5) Výsledek simulace - aktivní stopky
 
 ![clock_enable](https://github.com/Filip-ZL/Digital-electronics-1/blob/master/labs/project/Clock_enabled.PNG)
 Obrázek 6) Výsledek simulace - dělička frekvence
+
+## 2.4.	Další návrhy na vylepšení programu
+-	jelikož do čítače se dá nastavit hodnota odpočtu až do 59‘ 59“, je poněkud nepraktické čítat, zvláště pak u vyšších hodnot, po vteřinách. 
+-	zabudování resetovacího tlačítka do tlačítka enkodéru (např. pokud uživatel zmáčkne tlačítko po dobu 2 vteřin, čítač se vynuluje)
