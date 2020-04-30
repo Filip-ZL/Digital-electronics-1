@@ -39,6 +39,12 @@ Obrázek 5) Výsledek simulace - aktivní stopky
 ![clock_enable](https://github.com/Filip-ZL/Digital-electronics-1/blob/master/labs/project/Clock_enabled.PNG)
 Obrázek 6) Výsledek simulace - dělička frekvence
 
+![Duty_cycle1](https://github.com/Filip-ZL/Digital-electronics-1/blob/master/labs/project/strida%202%25.PNG)
+Obrázek 7) Střída 2%
+
+![Duty_cycle2](https://github.com/Filip-ZL/Digital-electronics-1/blob/master/labs/project/strida%2014%25.PNG)
+Obrázek 8) Střída 50%
+
 ## 2.4.	Další návrhy na vylepšení programu
 - Chyba v propojení v PWM generátoru, zvlášť funguje dobře, při spojení se "stopwatch" nefunguje korektně
 -	jelikož do čítače se dá nastavit hodnota odpočtu až do 59‘ 59“, je poněkud nepraktické čítat, zvláště pak u vyšších hodnot, po vteřinách. 
