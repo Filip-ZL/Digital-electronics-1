@@ -42,7 +42,7 @@ Obrázek 6) Výsledek simulace - dělička frekvence
 ![Duty_cycle1](https://github.com/Filip-ZL/Digital-electronics-1/blob/master/labs/project/strida%202%25.PNG)
 Obrázek 7) Střída 2%
 
-![Duty_cycle2](https://github.com/Filip-ZL/Digital-electronics-1/blob/master/labs/project/strida%2014%25.PNG)
+![Duty_cycle2](https://github.com/Filip-ZL/Digital-electronics-1/blob/master/labs/project/strida%2050%25.PNG)
 Obrázek 8) Střída 50%
 
 ## 2.4.	Další návrhy na vylepšení programu
