@@ -40,5 +40,7 @@ Obrázek 5) Výsledek simulace - aktivní stopky
 Obrázek 6) Výsledek simulace - dělička frekvence
 
 ## 2.4.	Další návrhy na vylepšení programu
+- Chyba v propojení v PWM generátoru, zvlášť funguje dobře, při spojení se "stopwatch" nefunguje korektně
 -	jelikož do čítače se dá nastavit hodnota odpočtu až do 59‘ 59“, je poněkud nepraktické čítat, zvláště pak u vyšších hodnot, po vteřinách. 
 -	zabudování resetovacího tlačítka do tlačítka enkodéru (např. pokud uživatel zmáčkne tlačítko po dobu 2 vteřin, čítač se vynuluje)
+- v UCF chybí připojit enkodér (nevěděli jsme jak)
